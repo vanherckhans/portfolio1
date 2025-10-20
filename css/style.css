@@ -1,20 +1,19 @@
 /* Algemene stijl */
-body {
-  margin: 10;
-  padding: 0;
+* {
   box-sizing: border-box;
-  font-family: Bold, Arial, sans-serif;
-  background: #acacacd2; /* lichtgrijs */
-  color: #000000; /* zwart */
-  padding-top: 110px; /* ruimte voor de vaste header */
-  padding-bottom: 100px;
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 
+body {
+  margin: 10px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #acacacd2; /* lichtgrijs */
+  color: #000000;
+  padding-top: 110px; /* ruimte voor vaste header */
+  padding-bottom: 70px; /* ruimte voor vaste footer */
 }
+
+/* Header */
 header {
   position: fixed;
   top: 0;
@@ -25,19 +24,18 @@ header {
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 40px;
   z-index: 1000;
-   border-radius: 8px;
+  border-radius: 8px;
   box-shadow: 0 2px 8px #ffffff;
 }
-
 
 .logo {
   color: white;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   transition: transform 0.3s ease;
-  flex: 0 0 auto;
 }
 .logo:hover {
   color: #000000;
@@ -50,19 +48,18 @@ span {
   font-weight: bold;
 }
 
+/* Navigatie */
 .navbar {
   display: flex;
-  justify-content: center;
-  flex: 1;
+  gap: 20px;
 }
 .navbar a {
   color: white;
   font-size: 18px;
   font-weight: 500;
-  margin: 0 20px;
-  border-bottom: 2px solid transparent;
-  transition: transform 0.3s ease;
-  padding: 18px 30px;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.3s ease;
 }
 .navbar a:hover,
 .navbar a:focus {
@@ -70,189 +67,60 @@ span {
   text-shadow: 0 0 2px #000000;
 }
 
-.contact {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 20px;
-  border-bottom: 2px solid transparent;
-  transition: transform 0.3s ease;
-}
-
-header h1 {
-  margin: 0;
-}
-
-nav a:hover {
-  color: #000000;
-  text-shadow: 0 0 2px #000000;
-  transform: scale(1.4);
-}
-
-nav {
-  margin: 0 1rem;
-}
-nav a {
-  color: white;
-  margin: 0 6rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
+/* Secties */
 section {
-   width: 100%;
-  height: px;
+  width: 100%;
   padding: 2rem;
-  background: #56b3e9c5; /* lichtgrijs */
+  background: #56b3e9c5;
   border-radius: 30px;
   box-shadow: 0 2px 8px #ffffff;
+  margin-bottom: 20px;
 }
 
 h2 {
-  color: #ffffff; /* blauw accent */
+  color: #ffffff;
 }
 
+/* Afbeeldingen */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px #ffffff;
+}
+.gecentreerde-afbeelding {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer */
 footer {
   position: fixed;
- 
   bottom: 0;
   left: 0;
   width: 100%;
   height: 50px;
-  background: #56b3e9c5; /* lichtblauw accent */
+  background: #56b3e9c5;
   padding: 15px 0;
   text-align: center;
-  background: #56b3e9c5;
   color: #000000;
-   border-radius: 8px;
+  border-radius: 8px;
   box-shadow: 0 2px 8px #ffffff;
 }
 
-.column {
-  float: left;
-  width: 70%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Bold, Arial, Helvetica, sans-serif;
-}
-.gecentreerde-afbeelding {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  shape-outside: border-box;
-    border-radius: 30px;
-  box-shadow: 0 3px 10px #ffffff;
-}
-/* Float four columns side by side */
-.column {
-  float: right;
-  width: 33.33%;
-  padding: 0 10px;
-}
-
-* {box-sizing: border-box}
-
-/* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 300px;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  height: 300px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family:Bold, Arial, Helvetica, sans-serif;
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-div.scroll-container {
+/* Scroll container */
+.scroll-container {
   background-color: #333;
-  overflow: auto;
+  overflow-x: auto;
   white-space: nowrap;
   padding: 10px;
 }
-
-div.scroll-container img {
+.scroll-container img {
   padding: 10px;
 }
 
-/* Mobiel (tot 768px) */
+/*  Mobiel (tot 768px) */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -275,7 +143,7 @@ div.scroll-container img {
   }
 }
 
-/*  Tablet (769px – 1024px) */
+/* Tablet (769px – 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .navbar {
     gap: 15px;
@@ -289,7 +157,7 @@ div.scroll-container img {
   }
 }
 
-/*  Laptop (1025px – 1280px) */
+/* Laptop (1025px – 1280px) */
 @media (min-width: 1025px) and (max-width: 1280px) {
   .navbar a {
     font-size: 18px;
@@ -300,7 +168,7 @@ div.scroll-container img {
   }
 }
 
-/* Grote desktop (1281px en breder) */
+/*  Grote desktop (1281px en breder) */
 @media (min-width: 1281px) {
   .navbar a {
     font-size: 20px;
