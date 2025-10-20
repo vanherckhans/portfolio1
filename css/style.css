@@ -116,9 +116,24 @@ footer {
   white-space: nowrap;
   padding: 10px;
 }
-.scroll-container img {
+.scroll-box {
+  background: #222;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #00000055;
   padding: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  max-width: 90%;
+  margin: 0 auto;
 }
+.scroll-box img {
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 8px;
+  height: 300px;
+}
+
+
 
 /*  Mobiel (tot 768px) */
 @media (max-width: 768px) {
