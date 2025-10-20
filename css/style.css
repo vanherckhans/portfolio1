@@ -251,3 +251,62 @@ div.scroll-container {
 div.scroll-container img {
   padding: 10px;
 }
+
+/* Mobiel (tot 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  section {
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  footer {
+    font-size: 14px;
+  }
+}
+
+/*  Tablet (769px – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    gap: 15px;
+  }
+  .navbar a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+  section {
+    padding: 1.5rem;
+  }
+}
+
+/*  Laptop (1025px – 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .navbar a {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+
+/* Grote desktop (1281px en breder) */
+@media (min-width: 1281px) {
+  .navbar a {
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+  section {
+    padding: 2.5rem;
+  }
+}
